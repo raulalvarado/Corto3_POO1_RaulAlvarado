@@ -4,23 +4,71 @@
  * and open the template in the editor.
  */
 package com.sv.udb.modelos;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
+import java.util.Date;
 
 /**
  *
  * @author Estudiante
  */
-@AllArgsConstructor
-@NoArgsConstructor
-
-@Data public class prestamos {
+public class prestamos {
     private int codipres;
     private libros libro;
     private usuarios usuario;
-    private String fechaprest;
-    private String fechadevo;
+    private Date fechaprest;
+    //private String fechadevo;
+
+    public prestamos() {
+    }
+
+    public prestamos(int codipres, libros libro, usuarios usuario, Date fechaprest/*, String fechadevo*/) {
+        this.codipres = codipres;
+        this.libro = libro;
+        this.usuario = usuario;
+        this.fechaprest = fechaprest;
+        //this.fechadevo = fechadevo;
+    }
+
+    public int getCodipres() {
+        return codipres;
+    }
+
+    public void setCodipres(int codipres) {
+        this.codipres = codipres;
+    }
+
+    public libros getLibro() {
+        return libro;
+    }
+
+    public void setLibro(libros libro) {
+        this.libro = libro;
+    }
+
+    public usuarios getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(usuarios usuario) {
+        this.usuario = usuario;
+    }
+
+    public Date getFechaprest() {
+        return fechaprest;
+    }
+
+    public void setFechaprest(Date fechaprest) {
+        this.fechaprest = fechaprest;
+    }
+
+    /*public String getFechadevo() {
+        return fechadevo;
+    }
+
+    public void setFechadevo(String fechadevo) {
+        this.fechadevo = fechadevo;
+    }
+*/
     
     @Override
     public String toString() {

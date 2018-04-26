@@ -21,7 +21,6 @@
         <link rel='stylesheet' href='webjars/bootstrap/4.0.0-2/css/bootstrap.min.css'>
         <script type="text/javascript" src="webjars/jquery/2.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="webjars/bootstrap/4.0.0-2/js/bootstrap.min.js"></script>
-        <script src="js/pdf.js"></script>
     </head>
     <body>
         <div class="container">
@@ -35,7 +34,7 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">Formulario</div>
                         <div class="panel-body">
-                            <form method="POST" action="PrestamoServlet" name="Demo">
+                            <form method="POST" action="vistaPrestamos" name="Demo">
                                 <div class="form-group">
                                     <label for="libro">Libros</label>
                                     <select name="libro" class="form-control" id="libro">
